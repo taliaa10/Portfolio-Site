@@ -33,7 +33,7 @@
         <span class="hero__hi">Hi, my name is</span>
         <h1 class="hero__name">Taliaa Tauatolo.</h1>
         <!-- <h1 class="hero__sub">I build things for the web.</h1> -->
-        <p>brief summary</p>
+        <p class="hero__subtext">brief summary</p>
         <a class="hero__btn btn" href="mailto:taliaadev@gmail.com"
           >Get in touch</a
         >
@@ -110,6 +110,7 @@
           <% portfolioData.forEach(function(project){ %>
           <div class="projects__card">
             <header class="projects__card-header">
+              some words
               <a
                 class="projects__icons"
                 href="<%= project.github %>"
@@ -127,7 +128,7 @@
             </header>
             <h3 class="projects__name"><%= project.projectName %></h3>
             <p class="projects__description">
-              <%= project.used %> <%= project.description %>
+              <%= project.description %>
             </p>
             <footer class="projects__tools">
               <%= project.used %>
@@ -136,7 +137,9 @@
 
           <%});%>
         </div>
-        <a class="btn show-more-btn" href="#">More Projects</a>
+        <div class="button">
+          <a class="btn show-more-btn" href="#">More Projects</a>
+        </div>
       </section>
 
       <!-- CONTACT -->
@@ -149,5 +152,25 @@
         >Built by Taliaa Tauatolo</a
       >
     </footer>
+    <script>
+      window.onscroll = function() {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.querySelector('.header').style.boxShadow =
+            '0 1.5rem 4rem rgba(0, 0, 0, 0.2)';
+        } else if (
+          document.body.scrollTop < 20 ||
+          document.documentElement.scrollTop < 20
+        ) {
+          document.querySelector('.header').style.boxShadow = none;
+        }
+      }
+    </script>
   </body>
 </html>

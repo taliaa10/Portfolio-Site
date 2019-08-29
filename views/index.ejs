@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Taliaa Tauatolo | Software Engineer</title>
   </head>
   <body>
     <header>
-      About Experience Projects Contact
-      <a href="/Taliaa-Tauatolo-Resume.pdf" target="_blank">RESUME</a>
+      <div class="nav__links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a
+          class="resume-link btn"
+          href="/Taliaa-Tauatolo-Resume.pdf"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
     </header>
-    <!-- RESUME -->
-    <!-- PDF uploaded link -->
 
     <!-- INTRO -->
     <div class="main-container">
@@ -21,30 +33,112 @@
         <span class="hero__hi">Hi my name is</span>
         <h1 class="hero__name">Taliaa Tauatolo</h1>
         <p>brief summary</p>
-        <a href="mailto:taliaadev@gmail.com">Get in touch</a>
+        <a class="btn" href="mailto:taliaadev@gmail.com">Get in touch</a>
       </section>
       <!-- ABOUT -->
-      <section>
-        Who I am. Where I'm from. What I enjoy. What I like about developing.
-        What I'm good at. My backstory, schooling, what I've been doing
-        recently.
-      </section>
-      <!-- SKILLS -->
-      <section>
-        Skills with technology, languages, etc.
+      <section id="about" class="about">
+        <h3 class="section-title">About Me</h3>
+        <div class="about__content">
+          <div class="about__content-text">
+            Who I am. Where I'm from. What I enjoy. What I like about
+            developing. What I'm good at. My backstory, schooling, what I've
+            been doing. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Enim consectetur ipsam accusantium fugit labore laborum vel
+            voluptate suscipit facere incidunt dolores eum, accusamus, est sit
+            tempore, eos quo a! Ratione. recently.
+            <div>
+              <!-- SKILLS -->
+              Skills with technology, languages, etc.
+            </div>
+          </div>
+          <img class="about__pic" src="me.jpg" alt="" />
+        </div>
       </section>
       <!-- EXPERIENCE -->
-      <section>
-        Rolls-Royce
+      <section id="experience" class="experience">
+        <h3 class="section-title">Where I've Worked</h3>
+        <div class="jobs__container">
+          <h4>
+            <span class="experience__position">
+              Application Support Engineer
+            </span>
+            <span class="experience__company">
+              <a href="https://www.rolls-royce.com" target="_blank">
+                @ Rolls-Royce plc
+              </a>
+            </span>
+          </h4>
+          <h5 class="experience__details">
+            <span>
+              September 2015 - November 2018
+            </span>
+          </h5>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              praesentium est inventore dignissimos? Deserunt quas beatae
+              nesciunt.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              praesentium est inventore dignissimos? Deserunt quas beatae
+              nesciunt.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              praesentium est inventore dignissimos? Deserunt quas beatae
+              nesciunt.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              praesentium est inventore dignissimos? Deserunt quas beatae
+              nesciunt.
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- WORK -->
-      <section class="projects">
-        Featured Projects Other Projects
+      <section id="projects" class="featured__projects">
+        <h3 class="section-title">Featured Projects</h3>
       </section>
+      <section class="projects">
+        Other Projects
+        <div class="projects__container">
+          <% portfolioData.forEach(function(project){ %>
+          <div class="projects__card">
+            <div class="projects__card-header">
+              <a
+                class="projects__icons"
+                href="<%= project.github %>"
+                target="_blank"
+              >
+                <i class="fa fa-github"></i>
+              </a>
+              <a
+                class="projects__icons"
+                href="<%= project.site %>"
+                target="_blank"
+              >
+                <i class="fa fa-link"></i>
+              </a>
+            </div>
+            <h3 class="projects__name"><%= project.projectName %></h3>
+            <%= project.used %> <%= project.description %>
+          </div>
+
+          <%});%>
+        </div>
+      </section>
+
       <!-- CONTACT -->
-      <section>
-        <a href="mailto:taliaadev@gmail.com">Get in touch</a>
+      <section id="#contact">
+        <a class="btn" href="mailto:taliaadev@gmail.com">Get in touch</a>
       </section>
     </div>
+    <footer>
+      <a href="https://github.com/taliaa10" target="_blank"
+        >Built by Taliaa Tauatolo</a
+      >
+    </footer>
   </body>
 </html>

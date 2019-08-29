@@ -154,7 +154,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: rgb(10, 25, 47);
-  /* background-image: linear-gradient(
+  /* -webkit-background-image: radial-gradient(
     to right bottom,
     rgb(15, 39, 75),
     rgb(10, 25, 47)
@@ -183,7 +183,7 @@ section {
   margin: 10px 0px 40px;
 }
 
-header {
+.header {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -237,8 +237,18 @@ header {
 }
 
 .hero__name {
-  font-size: 50px;
+  font-size: 80px;
   color: white;
+  line-height: 80px;
+}
+
+.hero__sub {
+  color: rgba(255, 255, 255, 0.514);
+  font-size: 60px;
+}
+
+.hero__btn {
+  margin-top: 500px;
 }
 
 .about {
@@ -265,6 +275,7 @@ header {
   height: 300px;
   width: auto;
   border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
 }
 
 /* EXPERIENCE */
@@ -301,6 +312,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
   cursor: pointer;
+  position: relative;
 }
 
 .projects__card-header {
@@ -310,7 +322,7 @@ header {
 .projects__icons {
   float: right;
   font-size: 25px;
-  color: white;
+  color: rgb(204, 214, 246);
   transition: all 0.3s;
 }
 
@@ -330,9 +342,37 @@ header {
   transform: translateY(-0.5rem);
 }
 
+.project__card-img {
+  width: auto;
+  height: 200px;
+  background-size: contain;
+  background-position: center;
+}
+
 .projects__name {
-  color: rgba(255, 255, 255, 0.801);
+  color: rgb(204, 214, 246);
   font-size: 20px;
+}
+
+.projects__tools {
+  position: absolute;
+  top: 87%;
+  font-size: 12px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono',
+    'Lucida Console', Monaco, monospace;
+  font-size: 12px;
+  color: rgb(168, 178, 209);
+  line-height: 1.75;
+  margin-right: 15px;
+}
+
+.projects__description {
+  font-size: 15px;
+}
+
+.show-more-btn {
+  margin: 100px;
+  width: 100px;
 }
 
 .experience {
@@ -342,8 +382,9 @@ header {
   padding: 150px 0px;
 }
 
-footer {
+.footer {
   padding: 50px;
   background-color: #020c1b;
   text-align: center;
+  font-size: 14px;
 }

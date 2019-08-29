@@ -40,12 +40,5 @@
     "site": "https://radiant-inlet-47339.herokuapp.com",
     "used": ["Node.js", "Express", "PostgreSQL"],
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
-  },
-  {
-    "projectName": "The Useless Calculator",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   }
 ]

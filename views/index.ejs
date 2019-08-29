@@ -12,7 +12,7 @@
     <title>Taliaa Tauatolo | Software Engineer</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="nav__links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -30,10 +30,13 @@
     <!-- INTRO -->
     <div class="main-container">
       <section class="hero">
-        <span class="hero__hi">Hi my name is</span>
-        <h1 class="hero__name">Taliaa Tauatolo</h1>
+        <span class="hero__hi">Hi, my name is</span>
+        <h1 class="hero__name">Taliaa Tauatolo.</h1>
+        <!-- <h1 class="hero__sub">I build things for the web.</h1> -->
         <p>brief summary</p>
-        <a class="btn" href="mailto:taliaadev@gmail.com">Get in touch</a>
+        <a class="hero__btn btn" href="mailto:taliaadev@gmail.com"
+          >Get in touch</a
+        >
       </section>
       <!-- ABOUT -->
       <section id="about" class="about">
@@ -106,7 +109,7 @@
         <div class="projects__container">
           <% portfolioData.forEach(function(project){ %>
           <div class="projects__card">
-            <div class="projects__card-header">
+            <header class="projects__card-header">
               <a
                 class="projects__icons"
                 href="<%= project.github %>"
@@ -121,13 +124,19 @@
               >
                 <i class="fa fa-link"></i>
               </a>
-            </div>
+            </header>
             <h3 class="projects__name"><%= project.projectName %></h3>
-            <%= project.used %> <%= project.description %>
+            <p class="projects__description">
+              <%= project.used %> <%= project.description %>
+            </p>
+            <footer class="projects__tools">
+              <%= project.used %>
+            </footer>
           </div>
 
           <%});%>
         </div>
+        <a class="btn show-more-btn" href="#">More Projects</a>
       </section>
 
       <!-- CONTACT -->
@@ -135,7 +144,7 @@
         <a class="btn" href="mailto:taliaadev@gmail.com">Get in touch</a>
       </section>
     </div>
-    <footer>
+    <footer class="footer">
       <a href="https://github.com/taliaa10" target="_blank"
         >Built by Taliaa Tauatolo</a
       >

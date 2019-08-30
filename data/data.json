@@ -46,5 +46,29 @@
     "used": "Node.js, Express, PostgreSQL",
     "image": "goquest.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+  },
+  {
+    "projectName": "BankRoll",
+    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "site": "http://goquest.surge.sh",
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "bankroll.png",
+    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+  },
+  {
+    "projectName": "Game of Dice",
+    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "site": "http://goquest.surge.sh",
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "piggame.png",
+    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+  },
+  {
+    "projectName": "GroceryTime",
+    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "site": "http://goquest.surge.sh",
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "grocery-time.png",
+    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   }
 ]

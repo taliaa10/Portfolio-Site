@@ -3,42 +3,48 @@
     "projectName": "NewSkill",
     "github": "https://github.com/Umreen24/NewSkill",
     "site": "https://newskillsite.herokuapp.com",
-    "used": ["Stripe API", "MongoDB"],
+    "used": "Stripe API, MongoDB",
+    "image": "newskill.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   },
   {
     "projectName": "The Useless Calculator",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
     "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "useless-calculator.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   },
   {
-    "projectName": "The Useless Calculator",
+    "projectName": "Travelista",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
     "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
+    "used": "CSS, SASS",
+    "image": "hotel-css-img.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   },
   {
-    "projectName": "The Useless Calculator",
+    "projectName": "Cookify Recipe App",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
+    "site": "http://cookify.surge.sh",
+    "used": "Javascript, Webpack, Babel",
+    "image": "cookify-js-img.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   },
   {
-    "projectName": "The Useless Calculator",
+    "projectName": "Movie Database",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
     "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "omdb-js.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   },
   {
-    "projectName": "The Useless Calculator",
+    "projectName": "GoQuest",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": ["Node.js", "Express", "PostgreSQL"],
+    "site": "http://goquest.surge.sh",
+    "used": "Node.js, Express, PostgreSQL",
+    "image": "goquest.png",
     "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
   }
 ]

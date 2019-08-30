@@ -14,7 +14,7 @@
   <body>
     <header class="header">
       <div class="nav__links">
-        <a href="#about">About</a>
+        <a rel="nofollow" href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -61,6 +61,7 @@
       <section id="experience" class="experience">
         <h3 class="section-title">Where I've Worked</h3>
         <div class="jobs__container">
+          <div class="job">
           <h4>
             <span class="experience__position">
               Application Support Engineer
@@ -76,65 +77,155 @@
               September 2015 - November 2018
             </span>
           </h5>
+          <div class="experience__description">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              praesentium est inventore dignissimos? Deserunt quas beatae
-              nesciunt.
+                Primary App Support Engineer for version 11 software <a href="https://visiumkms.com" target="_blank"> VisiumKMS</a> (Operational
+                Risk Management solution).
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              praesentium est inventore dignissimos? Deserunt quas beatae
-              nesciunt.
+                Led and assisted over 100 installs/upgrades for clients, on hosted and
+                deployed servers, utilizing Microsoft IIS, SQL Server & Oracle 11g/12c.
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              praesentium est inventore dignissimos? Deserunt quas beatae
-              nesciunt.
+                Resolved over 1000 incidents reported by users of the software, by
+                troubleshooting, reporting bugs to development, and providing workarounds.
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              praesentium est inventore dignissimos? Deserunt quas beatae
-              nesciunt.
+              Client users of the web app included oil & gas companies such as Shell, BP,
+              Chevron, Phillips 66, and more.
             </li>
           </ul>
+        </div>
         </div>
       </section>
       <!-- WORK -->
       <section id="projects" class="featured__projects">
         <h3 class="section-title">Featured Projects</h3>
+          <div class="featured__project">
+            <div class="featured__content-container">
+              <div class="featured__label">
+                Featured Project
+              </div>
+              <div class="featured__project-name">
+                NewSkill
+              </div>
+              <div class="featured__project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                corrupti iusto recusandae numquam asperiores accusamus quia
+                provident quos facere esse, hic cupiditate unde nisi! Quo
+                cupiditate harum aspernatur quam? In.
+              </div>
+              <div class="featured__project-tools">
+                  Node.js, Express, MongoDB, Stripe API
+              </div>
+              <div class="featured__links">
+                <a class="projects__icons" href="https://github.com/Umreen24/NewSkill" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="projects__icons" href="https://newskillsite.herokuapp.com" target="_blank">
+                  <i class="fa fa-link"></i>
+                </a>
+              </div>
+            </div>
+          
+          <a
+            href="https://newskillsite.herokuapp.com"
+            target="_blank"
+            class="featured__img-container"
+          >
+            <div class="featured__featuredimg">
+              <div style="width: 100%; padding-bottom: 62.4688%;"></div>
+              <img
+                class="featured__img"
+                src="img/projects/newskill.png"/>
+            </div>
+          </a>
+        </div>
+        <div class="featured__project">
+            <div class="featured__content-container featured__content-container-left">
+              <div class="featured__label">
+                Featured Project
+              </div>
+              <div class="featured__project-name">
+                NewSkill
+              </div>
+              <div class="featured__project-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                corrupti iusto recusandae numquam asperiores accusamus quia
+                provident quos facere esse, hic cupiditate unde nisi! Quo
+                cupiditate harum aspernatur quam? In.
+              </div>
+              <div class="featured__project-tools">
+                  Node.js, Express, MongoDB, Stripe API
+              </div>
+              <div class="featured__links">
+                <a class="projects__icons" href="https://github.com/Umreen24/NewSkill" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="projects__icons" href="https://newskillsite.herokuapp.com" target="_blank">
+                  <i class="fa fa-link"></i>
+                </a>
+              </div>
+            </div>
+          
+          <a
+            href="https://newskillsite.herokuapp.com"
+            target="_blank"
+            class="featured__img-container featured__img-container-right"
+          >
+            <div class="featured__featuredimg">
+              <div style="width: 100%; padding-bottom: 62.4688%;"></div>
+              <img
+                class="featured__img"
+                src="img/projects/hotel-css-img.png"/>
+            </div>
+          </a>
+        </div>
       </section>
       <section class="projects">
-        Other Projects
+        <h4 class="projects__title">More Projects</h4>
         <div class="projects__container">
           <% portfolioData.forEach(function(project){ %>
           <div class="projects__card">
-            <header class="projects__card-header">
-              some words
               <a
-                class="projects__icons"
-                href="<%= project.github %>"
-                target="_blank"
-              >
-                <i class="fa fa-github"></i>
-              </a>
-              <a
-                class="projects__icons"
-                href="<%= project.site %>"
-                target="_blank"
-              >
-                <i class="fa fa-link"></i>
-              </a>
-            </header>
-            <h3 class="projects__name"><%= project.projectName %></h3>
-            <p class="projects__description">
-              <%= project.description %>
-            </p>
-            <footer class="projects__tools">
-              <%= project.used %>
-            </footer>
+              href="<%= project.site %>"
+              target="_blank"
+            >
+            <div class="projects__img">
+              <img
+                class="projects__img"
+                src="img/projects/<%= project.image %>"
+                alt=""
+              />
+            </div>
+            </a>
+            <div class="projects__content">
+              <header class="projects__card-header">
+                <a
+                  class="projects__icons"
+                  href="<%= project.github %>"
+                  target="_blank"
+                >
+                  <i class="fa fa-github"></i>
+                </a>
+                <a
+                  class="projects__icons"
+                  href="<%= project.site %>"
+                  target="_blank"
+                >
+                  <i class="fa fa-link"></i>
+                </a>
+              </header>
+              <h3 class="projects__name"><%= project.projectName %></h3>
+              <p class="projects__description">
+                <%= project.description %>
+              </p>
+              <footer class="projects__tools">
+                <%= project.used %>
+              </footer>
+            </div>
           </div>
-
           <%});%>
         </div>
         <div class="button">
@@ -143,7 +234,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section id="#contact">
+      <section id="#contact" class="contact">
         <a class="btn" href="mailto:taliaadev@gmail.com">Get in touch</a>
       </section>
     </div>
@@ -153,24 +244,24 @@
       >
     </footer>
     <script>
-      window.onscroll = function() {
-        scrollFunction();
-      };
+      // window.onscroll = function() {
+      //   scrollFunction();
+      // };
 
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 80 ||
-          document.documentElement.scrollTop > 80
-        ) {
-          document.querySelector('.header').style.boxShadow =
-            '0 1.5rem 4rem rgba(0, 0, 0, 0.2)';
-        } else if (
-          document.body.scrollTop < 20 ||
-          document.documentElement.scrollTop < 20
-        ) {
-          document.querySelector('.header').style.boxShadow = none;
-        }
-      }
+      // function scrollFunction() {
+      //   if (
+      //     document.body.scrollTop > 80 ||
+      //     document.documentElement.scrollTop > 80
+      //   ) {
+      //     document.querySelector('.header').style.boxShadow =
+      //       '0 1.5rem 4rem rgba(0, 0, 0, 0.2)';
+      //   } else if (
+      //     document.body.scrollTop < 20 ||
+      //     document.documentElement.scrollTop < 20
+      //   ) {
+      //     document.querySelector('.header').style.boxShadow = none;
+      //   }
+      // }
     </script>
   </body>
 </html>

@@ -3,9 +3,9 @@
     "projectName": "NewSkill",
     "github": "https://github.com/Umreen24/NewSkill",
     "site": "https://newskillsite.herokuapp.com",
-    "used": "Stripe API, MongoDB",
+    "used": "Node.js, Express, MongoDB, Stripe API",
     "image": "newskill.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "A site where people can discover and register for nearby courses to learn a new skill, pick up a new hobby, or just meet new people."
   },
   {
     "projectName": "The Useless Calculator",
@@ -13,7 +13,7 @@
     "site": "https://radiant-inlet-47339.herokuapp.com",
     "used": "Node.js, Express, PostgreSQL",
     "image": "useless-calculator.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "A fun twist on the typical calculator app. You may not get the right answer, but you will surely get entertainment."
   },
   {
     "projectName": "Travelista",
@@ -21,54 +21,62 @@
     "site": "https://radiant-inlet-47339.herokuapp.com",
     "used": "CSS, SASS",
     "image": "hotel-css-img.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "CSS/SCSS Travel site for reviews and the best deals."
   },
   {
     "projectName": "Cookify Recipe App",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "github": "https://github.com/taliaa10/Recipe-API-App",
     "site": "http://cookify.surge.sh",
-    "used": "Javascript, Webpack, Babel",
+    "used": "Javascript, Webpack, Babel, Axios, Food2Fork API",
     "image": "cookify-js-img.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "Recipe API App. Search for any type of food and find different recipes. Adjust the serving size to calculate the right amount of ingredients. Add ingredients to your shopping list and save your favorite recipes."
   },
   {
     "projectName": "Movie Database",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": "Node.js, Express, PostgreSQL",
+    "site": "http://movietime.surge.sh/",
+    "used": "Javascript, OMDB API",
     "image": "omdb-js.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "Movie database. Search for movies, TV shows, actors, celebrities, and more."
   },
   {
     "projectName": "GoQuest",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "github": "https://github.com/taliaa10/GoQuest",
     "site": "http://goquest.surge.sh",
-    "used": "Node.js, Express, PostgreSQL",
+    "used": "CSS, SASS",
     "image": "goquest.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "CSS/SCSS landing page for adventure booking company. Packed with animations, pricing flip cards, custom form and more."
   },
   {
     "projectName": "BankRoll",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "http://goquest.surge.sh",
-    "used": "Node.js, Express, PostgreSQL",
+    "github": "https://github.com/taliaa10/BankRoll",
+    "site": "http://bankroll.surge.sh/",
+    "used": "Javascript",
     "image": "bankroll.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "Basic budgeting app. Calculate your income and expenses, find out your budget for the month."
   },
   {
     "projectName": "Game of Dice",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "http://goquest.surge.sh",
-    "used": "Node.js, Express, PostgreSQL",
+    "github": "https://github.com/taliaa10/Pig-Game",
+    "site": "http://piggame.surge.sh/",
+    "used": "Javascript",
     "image": "piggame.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "A two player game where each player takes turn rolling dice. The first player to score 100 points wins. If either player rolls 1 they will lose the points from that round."
   },
   {
     "projectName": "GroceryTime",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "http://goquest.surge.sh",
-    "used": "Node.js, Express, PostgreSQL",
+    "site": "http://grocerytime.surge.sh",
+    "used": "Javascript, Google Firebase",
     "image": "grocery-time.png",
-    "description": "The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen (albeit with a rather odd aspect ratio)."
+    "description": "Grocery shopping list app."
+  },
+  {
+    "projectName": "Purple",
+    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "site": "http://purplemap.surge.sh",
+    "used": "Javascript, Google Firebase, Google Nearby Places API",
+    "image": "purple.png",
+    "description": "An app where users can enter their desired address and what type of nearby places are important to them. They will then get a score report based on the their preferences and location entered."
   }
 ]

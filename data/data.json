@@ -67,7 +67,7 @@
     "projectName": "GroceryTime",
     "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
     "site": "http://grocerytime.surge.sh",
-    "used": "Javascript, Google Firebase",
+    "used": "Javascript, Google Firebase, Semantic UI",
     "image": "grocery-time.png",
     "description": "Grocery shopping list app."
   },

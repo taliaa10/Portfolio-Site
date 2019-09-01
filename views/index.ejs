@@ -13,10 +13,61 @@
     <title>Taliaa Tauatolo | Software Engineer</title>
   </head>
   <body>
-    <header class="header">
+    <div id="root">
+    <header class="nav__navContainer">
+      <div class="nav__navbar">
+        <div class="nav__Logo">
+          &nbsp;
+        </div>
+        <div class="">
+          <div class="nav__hamburger">
+            <div class="nav_HamburgerBox">
+              <div class="nav__hamburgerInner">
+                
+                  <div class="navigation">
+                      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+              
+                      <label for="navi-toggle" class="navigation__button">
+                          <span class="navigation__icon">&nbsp;</span>
+              
+                      </label>
+              
+                      <div class="navigation__background">
+
+                          <nav role="navigation">
+                              <div id="menuToggle">
+                                <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                  <a href="#about"><li>About</li></a>
+                                  <a href="#experience"><li>Experience</li></a>
+                                  <a href="#projects"><li>Projects</li></a>
+                                  <a href="#contact"><li>Contact</li></a>
+                                  <a
+                                    class="resume-link btn animLine"
+                                    href="/Taliaa-Tauatolo-Resume.pdf"
+                                    target="_blank"
+                                    >Resume</a
+                                  >
+                                </ul>
+                              </div>
+                            </nav>
+
+                      </div>
+              
+
+
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
       <div class="nav__links">
-        <a rel="nofollow" href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a rel="noopener noreferrer" href="#about">About</a>
+        <a rel="noopener noreferrer" href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
         <a
@@ -26,6 +77,7 @@
           >Resume</a
         >
       </div>
+    </div>
     </header>
     <div class="social__social-container">
       <div>
@@ -34,7 +86,7 @@
             <a href="https://github.com/taliaa10" target="_blank" rel="noopener noreferrer" aria-label="Github" class="social__social-link"><i class="fa fa-github"></i></a>
           </li>
           <li class="social__list-item">
-            <a href="https://github.com/taliaa10" target="_blank" rel="noopener noreferrer" aria-label="Github" class="social__social-link"><i class="fa fa-linkedin"></i></a>
+            <a href="https://linkedin.com/in/taliaa" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social__social-link"><i class="fa fa-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -53,8 +105,8 @@
       <section class="hero">
         <span class="hero__hi">Hi, my name is</span>
         <h1 class="hero__name">Taliaa Tauatolo.</h1>
-        <!-- <h1 class="hero__sub">I build things for the web.</h1> -->
-        <p class="hero__subtext">brief summary</p>
+        <h1 class="hero__sub">I build things for the web.</h1>
+        <div class="hero__subtext"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam itaque repellat distinctio rem! Hic ad, impedit cumque architecto ullam possimus!.</p></div>
         <a class="hero__btn btn animLine" href="mailto:taliaadev@gmail.com"
           >Get in touch</a
         >
@@ -106,7 +158,7 @@
             </span>
           </h5>
           <div class="experience__description">
-          <ul>
+          <ul class="experience__description-list">
             <li>
                 Primary App Support Engineer for version 11 software <a href="https://visiumkms.com" target="_blank"> VisiumKMS</a> (Operational
                 Risk Management solution).
@@ -280,6 +332,7 @@
         >
       </div>
     </footer>
+  </div>
     <script>
       // window.onscroll = function() {
       //   scrollFunction();

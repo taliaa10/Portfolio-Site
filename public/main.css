@@ -319,6 +319,18 @@ section {
   justify-content: space-between;
   -webkit-box-align: center;
   align-items: flex-start;
+  box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
+  position: relative;
+  z-index: 2;
+  background-color: #1c1c32;
+  color: rgb(168, 178, 209);
+  background-color: #1f1528ce;
+  font-size: 18px;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 55px;
+  border-radius: 3px;
+  backdrop-filter: blur(3px);
+  max-height: 320px;
 }
 
 @media (max-width: 56.25em) {
@@ -351,7 +363,7 @@ section {
   border-radius: 50%;
   /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); */
   /* border: 10px solid #ac41b61c; */
-  border: 2px solid white;
+  border: 15px solid rgba(172, 65, 182, 0.063);
   animation: float 6s ease-in-out infinite;
 }
 

@@ -191,6 +191,32 @@ section {
   margin: 10px 0px 40px;
 }
 
+.section-title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  /* max-width: 400px; */
+  background-color: #cb8cd1;
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 179, 255, 0.637) 40%,
+    transparent 40%
+  );
+  background-size: 200% 4px;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 8px #ac41b6);
+  /* background: linear-gradient(
+    90deg,
+    rgba(255, 177, 105, 0.637) 40%,
+    transparent 40%
+  );
+  filter: drop-shadow(0 0 8px #b68341); */
+}
+
 .header {
   display: flex;
   -webkit-box-pack: justify;
@@ -221,6 +247,88 @@ section {
     padding: 0;
     width: 100%;
   }
+}
+
+.social__social-container {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  color: rgba(168, 178, 209, 0.5);
+}
+
+.social__social-items-list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.social__social-items-list::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 250px;
+  background-color: rgba(168, 178, 209, 0.5);
+  margin: 0px auto;
+}
+
+.social__list-item {
+  margin-bottom: 30px;
+}
+
+.social__social-link {
+  padding: -15px;
+  margin-bottom: 50px;
+}
+
+.social__social-link i {
+  /* vertical-align: middle; */
+  margin-left: 0;
+}
+
+.email__email-container {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  color: rgb(168, 178, 209);
+}
+
+.email__email-container div {
+  width: 100%;
+  margin: 0px auto;
+}
+
+.email__emailLinkWrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.email__emailLink {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.email__emailLinkWrapper::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 170px;
+  background-color: rgb(168, 178, 209);
+  margin: 0px auto;
 }
 
 .btn {
@@ -599,10 +707,10 @@ section {
   box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px;
   position: relative;
   z-index: 1;
-  /* background-color: rgb(100, 255, 218); */
+  /* background-color: rgb(172, 0, 157); */
   grid-row: 1 / -1;
   border-radius: 4px;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  /* transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; */
   animation: float 6s ease-in-out infinite;
 }
 
@@ -629,7 +737,7 @@ section {
   bottom: 0px;
   z-index: 3;
   /* background-color: rgb(10, 25, 47); */
-  mix-blend-mode: screen;
+  /* mix-blend-mode: screen; */
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 
@@ -638,7 +746,7 @@ section {
   max-width: 100%;
   vertical-align: middle;
   position: relative;
-  mix-blend-mode: multiply;
+  /* mix-blend-mode: multiply; */
   /* filter: grayscale(100%) contrast(1) brightness(90%); */
   border-radius: 3px;
   position: relative;
@@ -827,7 +935,7 @@ section {
 
 .job {
   top: 0px;
-  left: 0px;
+  left: -20px;
   width: 100%;
   height: auto;
   opacity: 1;
@@ -835,6 +943,8 @@ section {
   position: relative;
   visibility: visible;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  border-left: 0.5px solid rgba(249, 179, 255, 0.46);
+  padding-left: 50px;
 }
 
 .experience__description ul {
@@ -866,7 +976,7 @@ section {
   margin: 0px auto 100px;
 }
 
-.footer {
+/* .footer {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -888,6 +998,29 @@ section {
   font-size: 14px;
   text-align: center;
   position: fixed;
+} */
+
+.footer__footerContainer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(21, 2, 27);
+  color: rgb(136, 146, 176);
+  text-align: center;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+}
+
+.footer__footerCopy {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 12px;
+  line-height: 1;
+  margin: 10px 0px;
 }
 
 /* GLOW BUTTON */

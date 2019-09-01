@@ -144,7 +144,7 @@ h3,
 h4,
 h5 {
   font-weight: 600;
-  color: rgb(230, 241, 255);
+  color: rgb(255, 230, 253);
   margin: 0px 0px 10px;
 }
 
@@ -497,6 +497,14 @@ section {
   /* background-color: #330033; */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' opacity='0.3' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
   height: 600px;
+
+  /* height: 100%; */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
 }
 
 .hero__hi {
@@ -560,7 +568,8 @@ section {
 @media (max-width: 56.25em) {
   .about__content {
     display: block;
-    padding: 25px;
+    padding: 30px;
+    max-height: 425px;
   }
 }
 
@@ -581,15 +590,56 @@ section {
   font-size: 18px;
 }
 
+.about__skillContainer {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.about__skill {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  color: rgb(136, 146, 176);
+}
+
+.about__skill::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: #ac41b6;
+  font-size: 14px;
+  line-height: 12px;
+}
+
 .about__pic {
   height: 300px;
   width: auto;
-  /* border-radius: 3px; */
   border-radius: 50%;
-  /* box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); */
-  /* border: 10px solid #ac41b61c; */
   border: 15px solid rgba(172, 65, 182, 0.063);
-  /* animation: float 6s ease-in-out infinite; */
+  position: relative;
+}
+
+.about__pic:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: auto;
+  opacity: 0;
+  /* background-color: #ac41b6; */
+  background-image: linear-gradient(to right bottom, #ba3cc5, #260429);
+  cursor: pointer;
+}
+
+.about__pic:hover:after {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 @media (max-width: 56.25em) {
@@ -681,7 +731,7 @@ section {
 
 @media (max-width: 56.25em) {
   .experience {
-    padding: 200px 0px 150px;
+    padding: 250px 0px 150px;
   }
 }
 
@@ -1002,9 +1052,6 @@ section {
   width: 350px;
 }
 
-/* .projects__img img:after {
-} */
-
 .projects__img:after {
   position: absolute;
   content: "";
@@ -1097,6 +1144,40 @@ section {
   max-width: 600px;
   padding: 150px 0px;
   margin: 0px auto 100px;
+}
+
+.contact__heading {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  display: block;
+  color: #ac41b6;
+  font-size: 16px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 10px 0px 20px;
+}
+
+.contact__title {
+  font-size: 60px;
+  margin: 0px 0px 20px;
+}
+
+.contact a {
+  display: inline-block;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  margin-top: 50px;
+  padding: 20px 30px;
 }
 
 /* .footer {

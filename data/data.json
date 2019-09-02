@@ -4,7 +4,7 @@
     "github": "https://github.com/Umreen24/NewSkill",
     "site": "https://newskillsite.herokuapp.com",
     "used": "Node.js, Express, MongoDB, Stripe API, Heroku",
-    "image": "newskill.png",
+    "image": "realtor.png",
     "description": "A site where people can discover and register for nearby courses to learn a new skill, pick up a new hobby, or just meet new people."
   },
   {

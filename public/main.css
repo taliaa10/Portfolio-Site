@@ -787,7 +787,7 @@ section {
   }
 
   .job {
-    padding-left: 0px;
+    padding-left: 17px;
   }
 }
 
@@ -1377,6 +1377,43 @@ section {
     270deg,
     rgba(15, 99, 255, 0.3),
     rgba(255, 15, 195, 0.3)
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 10s ease infinite;
+}
+
+/* TOP BACKLIGHT */
+
+.topbacklight {
+  /* position: absolute; */
+  top: 10%;
+  /* line-height: 30vw; */
+  /* text-align: center; */
+  color: #252b37;
+  /* background-color: #151823; */
+  animation: textColor 10s ease infinite;
+}
+
+.topbacklight:after {
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: -150%;
+  right: 0;
+  z-index: -1;
+  height: 90%;
+  width: 250%;
+  border-radius: 50%;
+  margin: 0 auto;
+  transform: scale(0.75);
+  -webkit-filter: blur(5vw);
+  -moz-filter: blur(5vw);
+  -ms-filter: blur(5vw);
+  filter: blur(5vw);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 15, 175, 0.07),
+    rgba(255, 103, 15, 0.07)
   );
   background-size: 200% 200%;
   animation: animateGlow 10s ease infinite;

@@ -1,0 +1,7 @@
+{
+    "appService.zipIgnorePattern": [
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/b6855a56-6639-4b47-962f-c26247d086a9/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/taliaa",
+    "appService.deploySubpath": ""
+}

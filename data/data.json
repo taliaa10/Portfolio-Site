@@ -1,21 +1,5 @@
 [
   {
-    "projectName": "NewSkill",
-    "github": "https://github.com/Umreen24/NewSkill",
-    "site": "https://newskillsite.herokuapp.com",
-    "used": "Node.js, Express, MongoDB, Stripe API, Heroku",
-    "image": "realtor.png",
-    "description": "A site where people can discover and register for nearby courses to learn a new skill, pick up a new hobby, or just meet new people."
-  },
-  {
-    "projectName": "The Useless Calculator",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
-    "site": "https://radiant-inlet-47339.herokuapp.com",
-    "used": "Node.js, Express, PostgreSQL, AWS",
-    "image": "useless-calculator.png",
-    "description": "A fun twist on the typical calculator app. You may not get the right answer, but you will surely get entertainment."
-  },
-  {
     "projectName": "Travelista",
     "github": "https://github.com/taliaa10/Travel-App",
     "site": "http://travelista.surge.sh/",

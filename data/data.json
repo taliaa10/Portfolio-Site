@@ -17,7 +17,7 @@
   },
   {
     "projectName": "Movie Database",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "github": "https://github.com/taliaa10/DigitalCrafts/tree/master/Assignments/7-22/super-hero-movies-api",
     "site": "http://movietime.surge.sh/",
     "used": "Javascript, OMDB API",
     "image": "omdb-js.png",
@@ -49,7 +49,7 @@
   },
   {
     "projectName": "GroceryTime",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "github": "https://github.com/taliaa10/Grocery-App",
     "site": "http://grocerytime.surge.sh",
     "used": "Javascript, Google Firebase, Semantic UI",
     "image": "grocery-time.png",
@@ -57,7 +57,7 @@
   },
   {
     "projectName": "Purple",
-    "github": "https://github.com/Jacob-Bankston/Calculate-with-Personality",
+    "github": "https://github.com/ersnover/purple-map-app",
     "site": "http://purplemap.surge.sh",
     "used": "Javascript, Google Firebase, Google Nearby Places API",
     "image": "purple.png",

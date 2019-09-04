@@ -62,5 +62,13 @@
     "used": "Javascript, Google Firebase, Google Nearby Places API",
     "image": "purple.png",
     "description": "An app where users can enter their desired address and what type of nearby places are important to them. They will then get a score report based on the their preferences and location entered."
+  },
+  {
+    "projectName": "React Bookstore",
+    "github": "https://github.com/taliaa10/React-Book-Store",
+    "site": "https://serene-shaw-64b52e.netlify.com",
+    "used": "React, 100-Best-Books API",
+    "image": "bookstore.png",
+    "description": "A simple bookstore built with react and the 100-best-books API"
   }
 ]

@@ -1,5 +1,13 @@
 [
   {
+    "projectName": "Catch of the Day",
+    "github": "https://github.com/taliaa10/React-Restaurant-Inventory-App",
+    "site": "https://nifty-perlman-b17eab.netlify.com",
+    "used": "React.js, Google Firebase, Google Authentication",
+    "image": "catchoftheday-react.png",
+    "description": "React.js restaurant inventory tracking and ordering app. Add, update, view and delete different inventory items. Add and remove items from your order."
+  },
+  {
     "projectName": "Travelista",
     "github": "https://github.com/taliaa10/Travel-App",
     "site": "http://travelista.surge.sh/",

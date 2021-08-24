@@ -153,6 +153,20 @@ h5 {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #160f1d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0f;
+}
+
 body {
   width: 100%;
   min-height: 100%;
